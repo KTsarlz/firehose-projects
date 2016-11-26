@@ -5,20 +5,220 @@
     <title>Firehose Portfolio</title>
 
     <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/prism-atom-dark.css" type="text/css">
+
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/prism.ruby.js"></script>
 
   </head>
   <body>
+    <div class="about-container">
+
+
       <div class="about">
 
       <img src="images/profile-photo.jpg" alt="My Image" class="profile-img">
 
       <h1>Kobi Tsarlz Gonzales</h1>
 
-      <h2>Software Engineer</h2>
+      <h2>JUNIOR SOFTWARE ENGINEER</h2>
 
-      <p class="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <hr class="grey">
+
+      <p class="bio">Kobi Gonzales is a junior web developer.</p>
 
      </div>
+   </div>
+   <h3>Code Snippets</h3>
+   <hr class="yellow">
+
+   <div class="box">
+      <h4> Temperature Conversion</h4>
+      <p>This ruby program will prompt the user for a temperature
+        in degrees Celsius and let the user know what the
+        corresponding temperature is in Fahrenheit.
+      </p>
+   </div>
+
+   <div class="box">
+     <pre><code class="language-ruby">
+       def func(var)
+       far = ((var * 9) / 5) + 32
+        return
+       end
+
+        puts "Enter degrees in Celcius: "
+        var = gets.to_i
+        puts "This is the temp in fahrenheit #{func(var)})"
+      </code></pre>
+
+
+   </div>
+
+   <div class="clear">
+
+   </div>
+
+   <div class="box">
+      <pre><code class="language-ruby">
+        def func(num)
+
+            var = num % 10
+            if num  &gt;=11 &amp;&amp; num &lt;=13
+              return &quot;This is the #{num}th item&quot;
+            elsif var % 10 == 1
+              return &quot;This is the #{num}st item&quot;
+            elsif var % 10 == 2
+              return &quot;This is the #{num}nd item&quot;
+            elsif var % 10 == 3
+              return &quot;This is the #{num}rd item&quot;
+            else
+              return &quot;This is the #{num}th item&quot;
+            end
+        end
+
+          puts &quot;Enter a number&quot;
+          num = gets.chomp.to_i
+
+          puts func(num)
+
+
+      </code></pre>
+   </div>
+
+   <div class="box">
+     <h4>Ordinal Challenge</h4>
+     <p>
+       This ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+     </p>
+   </div>
+
+   <div class="clear">
+
+   </div>
+
+
+   <div class="box">
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical
+        interview problem which displays sequences
+        of the Foobar pattern.
+  </p>
+   </div>
+
+   <div class="box">
+      <pre><code class="language-ruby">
+
+        def func(items)
+            num = (1..items).to_a
+
+            num.each do |foo|
+            if foo % 3 == 0 &amp;&amp; foo % 5 == 0
+              puts &quot;FooBar&quot;
+            elsif foo % 3 == 0
+              puts &quot;Foo&quot;
+            elsif foo % 5 == 0
+              puts &quot;Bar&quot;
+            else
+              puts foo
+            end
+            end
+            end
+
+            puts  &quot;How many items do you want to see?&quot;
+            items = gets.chomp.to_i
+
+            func(items)
+      </code></pre>
+   </div>
+
+   <div class="clear">
+
+
+     <h3>Web Apps</h3>
+     <hr class="yellow">
+
+     <div class="box">
+       <h4>Quote Generator</h4>
+       <img src="images/splurty.png" alt="" class="full-width">
+       <p>
+         A database-powered quote generator with a mobile-first
+         design, using the Ruby on Rails framework, HTML, and CSS.
+         Uses Git and GitHub for version control, and launched
+         on Heroku.
+       </p>
+     </div
+
+
+           <div class="box">
+        <h4>Yelp Clone</h4>
+        <img src="images/nomster.png" class="full-width" />
+        <p>
+          A Yelp clone that integrates with the Google Maps API
+          and includes features like user comments, star ratings,
+          image uploading, and user authentication.
+        </p>
+      </div>
+      <br class="clear" />
+
+      <div class="box">
+        <h4>Two-Sided Market Place</h4>
+        <img src="images/flixter.png" class="full-width" />
+        <p>
+          A two-sided, video-streaming marketplace platform that
+          features credit card payment capabilities, user role
+          management, complex user interfaces, and advanced
+          database relationships.
+        </p>
+      </div>
+      <div class="box">
+        <h4>Test Driven Development</h4>
+        <img src="images/grammable.png" class="full-width" />
+        <p>
+          An Instagram clone that was built using industry-standard, test-driven
+          development following numerous red/green/refactor cycles.
+        </p>
+      </div>
+      <br class="clear" />
+      <div class="box">
+        <h4>Single Page Todo Application</h4>
+        <img src="images/todoster.png" class="full-width" />
+        <p>
+          This single-page to-do application features a
+          fluid user interface that– by using JavaScript–
+          allows users to rapidly add dynamic content.
+        </p>
+      </div>
+      <div class="box">
+        <h4>Agile Team Project</h4>
+        <img src="images/chess.png" class="full-width" />
+        <p>
+          Worked on an Agile software development team building
+          a chess application. Under the guidance of a senior software engineer,
+          we had weekly Agile team meetings for code reviews, sprint planning,
+          and feature assignments.
+        </p>
+      </div>
+      <br class="clear" />
+
+      <h3>Skills &amp; Tools</h3>
+      <hr class="yellow">
+
+      <p class="skills-and-tools">
+        Ken has developed proficiency and expertise
+        in the following programming languages and
+        comfort with the following tools.
+      </p>
+
+
+   </div>
+
 
   </body>
 </html>
