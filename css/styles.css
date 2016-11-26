@@ -72,3 +72,7 @@ p {
 .full-width {
   width: 100%;
 }
+.skills-and-tools {
+  max-width: 400px;
+  margin: 40px auto;
+}
