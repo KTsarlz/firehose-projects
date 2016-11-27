@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Firehose Portfolio</title>
+    <meta name="description" content="Ken Mazaika is a professional
+          software engineer specializing in full-stack development.
+          He has extensive experience with Ruby, Rails, JavaScript,
+          and building web applications.">
 
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
@@ -16,6 +20,13 @@
   <body>
     <div class="about-container">
 
+      <ul>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+        <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+        <li class="hire-me"><a href="#contact" class="nav-link">Hire Me</a></li>
+      </ul>
 
       <div class="about">
 
@@ -31,7 +42,7 @@
 
      </div>
    </div>
-   <h3>Code Snippets</h3>
+   <h3 id="code-samples">Code Snippets</h3>
    <hr class="yellow">
 
    <div class="box">
@@ -43,16 +54,14 @@
    </div>
 
    <div class="box">
-     <pre><code class="language-ruby">
-       def func(var)
+     <pre><code class="language-ruby">def func(var)
        far = ((var * 9) / 5) + 32
         return
        end
 
         puts "Enter degrees in Celcius: "
         var = gets.to_i
-        puts "This is the temp in fahrenheit #{func(var)})"
-      </code></pre>
+        puts "This is the temp in fahrenheit #{func(var)})"</code></pre>
 
 
    </div>
@@ -62,9 +71,7 @@
    </div>
 
    <div class="box">
-      <pre><code class="language-ruby">
-        def func(num)
-
+      <pre><code class="language-ruby">def func(num)
             var = num % 10
             if num  &gt;=11 &amp;&amp; num &lt;=13
               return &quot;This is the #{num}th item&quot;
@@ -81,11 +88,7 @@
 
           puts &quot;Enter a number&quot;
           num = gets.chomp.to_i
-
-          puts func(num)
-
-
-      </code></pre>
+          puts func(num)</code></pre>
    </div>
 
    <div class="box">
@@ -113,35 +116,30 @@
    </div>
 
    <div class="box">
-      <pre><code class="language-ruby">
-
-        def func(items)
-            num = (1..items).to_a
-
+      <pre><code class="language-ruby">        def func(items)
+          num = (1..items).to_a
             num.each do |foo|
-            if foo % 3 == 0 &amp;&amp; foo % 5 == 0
-              puts &quot;FooBar&quot;
-            elsif foo % 3 == 0
-              puts &quot;Foo&quot;
-            elsif foo % 5 == 0
-              puts &quot;Bar&quot;
-            else
+              if foo % 3 == 0 &amp;&amp; foo % 5 == 0
+                puts &quot;FooBar&quot;
+              elsif foo % 3 == 0
+                puts &quot;Foo&quot;
+              elsif foo % 5 == 0
+                puts &quot;Bar&quot;
+              else
               puts foo
-            end
-            end
-            end
+             end
+          end
+        end
 
             puts  &quot;How many items do you want to see?&quot;
             items = gets.chomp.to_i
-
-            func(items)
-      </code></pre>
+            func(items)</code></pre>
    </div>
 
    <div class="clear">
 
 
-     <h3>Web Apps</h3>
+     <h3 id="web-apps">Web Apps</h3>
      <hr class="yellow">
 
      <div class="box">
@@ -154,6 +152,8 @@
          on Heroku.
        </p>
      </div
+
+        <br class="clear"/>
 
 
            <div class="box">
@@ -207,15 +207,36 @@
       </div>
       <br class="clear" />
 
-      <h3>Skills &amp; Tools</h3>
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
       <hr class="yellow">
 
       <p class="skills-and-tools">
-        Ken has developed proficiency and expertise
+        I developed proficiency and expertise
         in the following programming languages and
         comfort with the following tools.
       </p>
 
+      <div class="icons">
+
+      <img src="images/github.png" alt="" class="icon">
+      <img src="images/rubocop.png" alt="" class="icon">
+      <img src="images/trello.png" alt="" class="icon">
+      <img src="images/slack.png" alt="" class="icon">
+      <img src="images/codeship.png" alt="" class="icon">
+
+      </div>
+      <br class="clear" />
+
+      <div class="icons" style="margin-top:15px;">
+        <img src="images/skills.png" alt="">
+      </div>
+
+
+      <div id="contact" class="contact">
+          <h3 class="contact-headline">Contact</h3>
+          <hr class=" yellow">
+
+      </div>
 
    </div>
 
